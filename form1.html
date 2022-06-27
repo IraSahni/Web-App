@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Css Form</title>
+    <link rel="stylesheet" href="./css/form1.css">
+</head>
+<body>
+    <div class="form1">
+  
+    <form>
+        <h3 class="h3-centre">Scholarship Registration Form</h3>
+        <div>
+            <input class="inp-w" required type="text" placeholder="First Name">
+            <input class="inp-w" required type="text" placeholder="Last Name">
+        </div>
+        <div>
+            <input class="inp-w" required type="tel" placeholder="Mobile Number">
+            <input class="inp-w" required type="email" placeholder="Email">
+        </div>
+        <div>
+            <input class="inp-w" required type="password" placeholder="Password">
+            <input class="inp-w" required type="password" placeholder="Confirm Password">
+        </div>
+        <div>
+            <label>Gender</label>
+       
+            <input type="radio" required>
+            <label>Male</label>
+
+            <input type="radio" required>
+            <label>Female</label>
+
+            <input type="radio" required>
+            <label>Not Specified</label>
+        </div>
+
+        <div>
+            <label>DOB</label>
+            <input type="date" required>
+        </div>
+
+        <div>
+            <label>Address</label>
+              <input class="inp-w" required type="text" placeholder="street">
+              <input class="inp-w" required type="text" placeholder="city">
+        </div>
+
+        <div>
+        <input class="inp-w" required type="text" placeholder="District">
+        <input class="inp-w" required type="text" placeholder="State">
+        </div>
+
+        <div>
+            <textarea cols="52" rows="5" placeholder="Alternative Address"></textarea>        
+        </div> 
+
+        <div>
+            <label>Upload Image:</label>
+            <input style="border: none;" class="inp-w" type="file" required accept="image/jpeg">
+        </div>
+
+        <div>
+            <input type="checkbox" required>
+            <label>I accept all Terms And Condition</label>
+        </div>
+        
+        <div  style="margin-top:10px;margin-bottom:10px;">
+            <button class="btn" type="submit" style="float:left;">SignUp</button>
+            <button class="btn" type="submit" style="float:right; margin-right:30px">Login</button>
+        </div>
+        
+    </form> 
+    </div>
+</body>
+</html>

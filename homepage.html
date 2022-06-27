@@ -1,0 +1,61 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+	pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Home Page</title>
+</head>
+<body>
+	<%
+		String message = (String) application.getAttribute("message");
+		if (message != null) {
+	%>
+	<h3><%=message%></h3>
+	<%
+		application.removeAttribute("message");
+		}
+	%>
+	<div class="homepage">
+        <script src="./css/homepage.css"></script> 
+	<form action="signin.jsp" method="post">
+	<div>
+	<%@include file="HeaderhomePage.jsp" %>
+	</div>
+	<div>
+	<style type="text/css">
+	/* <%@include file="homepage.css"%> */
+	</style>
+	</div>
+	<div>
+	<ul class = "breadcrumb" style="width:100%;overflow:hidden; height:34px">
+	 <a href="" style="color: white;">About</a>
+	 <a href="" style="color: white;">Careers</a>
+    </ul>
+    </div>
+	<div>
+	  <input class="inp-w" required align="centre"  type="text" name="username" placeholder="Enter the username"><br><br> 
+	  <input class="inp-w" required align="centre" type="password" name="password" placeholder="Enter the password"><br><br>
+	</div>
+	<div>
+	  <label align="centre">SignIn as:</label> 
+	  <input type="checkbox">Admin<br><br>
+	  </div>
+	  <div>
+	  <input  padding:left="200px; class="inp-d" required type="checkbox">HR<br><br> 
+	  </div>
+	  <div>
+	  <input  margin:left="200px; class="inp-d" required type="checkbox">Student<br><br>
+	</div>
+	<div>
+	  <input font size="4" align="left" type="submit" value="SignIn" placeholder="SignIn"><br><br>
+	</div>
+	<div  style="margin-top:10px;margin-bottom:10px;">
+            <button class="btn" type="submit" style="float:left;">Forget Password</button>
+            <button class="btn" type="submit" style="float:right; margin-right:30px">Click Here</button><br><br>
+        </div>
+			<%@ include file="footer.html" %>
+	</form>
+	</div>
+</body>
+</html>
